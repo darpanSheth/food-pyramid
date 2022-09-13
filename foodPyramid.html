@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Darpan">
+    <title>Food Pyramid</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        caption{
+            padding: 25px;
+            font-size: 40px;
+        }
+        table, th, td{border: thin solid;}
+        thead th{
+            padding: 15px;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+       tbody td{
+        text-align: center;
+        padding: 15px;
+    }
+       tbody th {
+        text-align: left;
+        padding: 15px;
+    }
+       span{
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption><b>The Food Pyramid</b></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th id="guidelines" colspan="2">Serving Guidlines</th>
+            </tr>
+            <tr>
+                <th id="foodGroup">Food Group</th>
+                <th id="pastPeriod" headers="guidelines">2005-2010</th>
+                <th id="presentPeriod" headers="guidelines">2011-present</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="milkGroup" headers="foodGroup">Milk Group<br><span>(Milk, Yogurt, Cheese)</span></th>
+                <td headers="guidelines pastPeriod">2-3</td>
+                <td headers="guidelines presentPeriod">3-4</td>
+            </tr>
+            <tr>
+                <th id="meatGroup" headers="foodGroup">Meat Group<br><span>(Beef, Poutry, Fish, Beans)</span></th>
+                <td headers="guidelines pastPeriod">2-3</td>
+                <td headers="guidelines presentPeriod">5-6</td>
+            </tr>
+            <tr>
+                <th id="fruits" headers="foodGroup">Fruits</th>
+                <td headers="guidelines pastPeriod">2-4</td>
+                <td headers="guidelines presentPeriod">2-4</td>
+            </tr>
+            <tr>
+                <th id="vegetables" headers="foodGroup">Vegetables</th>
+                <td headers="guidelines pastPeriod">3-5</td>
+                <td headers="guidelines presentPeriod">1-2</td>
+            </tr>
+            <tr>
+                <th id="saltedSnacks" headers="foodGroup">Heavily Salted Snacks</th>
+                <td headers="guidelines pastPeriod">1-2</td>
+                <td headers="guidelines presentPeriod">3-5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
